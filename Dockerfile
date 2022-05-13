@@ -6,6 +6,10 @@ COPY . .
 
 RUN apt-get update
 
+RUN apt-get install protobuf-compiler
+
+RUN protoc object_detection/protos/*.proto --python_out=.
+
 RUN pip install -r requirements.txt
 
 EXPOSE 8001
