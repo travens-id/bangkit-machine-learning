@@ -1,11 +1,10 @@
-FROM python:3.10.3-slim-buster
+FROM python:3.10
 
 WORKDIR /bangkit-machine-learning
 
-ADD . /bangkit-machine-learning
-
-RUN apt-get update
+COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "app.py"]
+ENTRYPOINT [ "python" ]
+CMD [ "app.py" ]
