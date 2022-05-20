@@ -2,12 +2,16 @@ import os
 from flask import Flask, jsonify, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from PIL import Image
-
+import sys
+sys.path.append("..")
 
 app = Flask(__name__)
 
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg'])
-app.config['UPLOAD_FOLDER'] = './uploads/'
+app.config['UPLOAD_FOLDER'] = 'uploads/'
+app.config['DOWNLOAD_FOLDER'] = 'downloads/'
+
+LABEL_FILENAME = 'labels/label_map.pbtxt'
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -33,7 +37,6 @@ def predict():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        # return redirect(url_for('download_file', name=filename))
         return "Uploaded!"
 
 

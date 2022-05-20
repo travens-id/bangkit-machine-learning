@@ -1,0 +1,28 @@
+item { 
+	name:'Monumen_Nasional'
+	id:1
+}
+item { 
+	name:'Museum_Sejarah_Jakarta'
+	id:2
+}
+item { 
+	name:'Tugu_Yogyakarta'
+	id:3
+}
+item { 
+	name:'Candi_Borobudur'
+	id:4
+}
+item { 
+	name:'Candi_Prambanan'
+	id:5
+}
+item { 
+	name:'Patung_Pancoran'
+	id:6
+}
+item { 
+	name:'Pura_Ulun_Danu_Bedugul'
+	id:7
+}
