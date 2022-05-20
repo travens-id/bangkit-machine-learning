@@ -77,13 +77,17 @@ def predict():
             min_score_thresh=.30,
             agnostic_mode=False
         )
-        im = Image.fromarray(image_np_with_detections.squeeze())
-        im.save('downloads/'+filename)
-        return redirect(url_for('download_file', name=filename))
+        predicted_image = Image.fromarray(image_np_with_detections.squeeze())
+        predicted_image.save('downloads/'+filename)
+        json = {
+            # "label": label,
+            "image_url": 'http://127.0.0.1:5000/downloads/'+filename
+        }
+        return jsonify(json)
 
 @app.route('/downloads/<name>')
 def download_file(name):
-    return send_from_directory(app.config["UPLOAD_FOLDER"], name)
+    return send_from_directory(app.config["DOWNLOAD_FOLDER"], name)
 
 @app.errorhandler(404)
 def not_found(error):
