@@ -79,7 +79,6 @@ def predict():
         predicted_image = Image.fromarray(image_np_with_detections.squeeze())
         predicted_image.save('downloads/'+filename)
         label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
-        print(label)
         json = {
             "label": label,
             "image_url": 'http://127.0.0.1:5000/downloads/'+filename
