@@ -1,5 +1,5 @@
 import os
-from flask import Flask, jsonify, request, redirect, url_for, send_from_directory, render_template
+from flask import Flask, jsonify, request, send_from_directory
 from werkzeug.utils import secure_filename
 import numpy as np
 from PIL import Image
@@ -33,13 +33,12 @@ def load_image_into_numpy_array(image):
 
 @app.route('/')
 def index():
-    # hello_json = {
-    #     'status_code': 200,
-    #     'message': 'Success testing the API!',
-    #     'data': [],
-    # }
-    # return jsonify(hello_json)
-    return render_template('index.html')
+    hello_json = {
+        'status_code': 200,
+        'message': 'Success testing the API!',
+        'data': [],
+    }
+    return jsonify(hello_json)
 
 @app.route('/post', methods=['POST'])
 def post():
@@ -79,8 +78,10 @@ def predict():
         )
         predicted_image = Image.fromarray(image_np_with_detections.squeeze())
         predicted_image.save('downloads/'+filename)
+        label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
+        print(label)
         json = {
-            # "label": label,
+            "label": label,
             "image_url": 'http://127.0.0.1:5000/downloads/'+filename
         }
         return jsonify(json)

@@ -1205,10 +1205,10 @@ def visualize_boxes_and_labels_on_image_array(
         if not skip_labels:
           if not agnostic_mode:
             if classes[i] in six.viewkeys(category_index):
-              class_name = category_index[classes[i]]['name']
+              visualize_boxes_and_labels_on_image_array.class_name = category_index[classes[i]]['name']
             else:
-              class_name = 'N/A'
-            display_str = str(class_name)
+              visualize_boxes_and_labels_on_image_array.class_name = 'N/A'
+            display_str = str(visualize_boxes_and_labels_on_image_array.class_name)
         if not skip_scores:
           if not display_str:
             display_str = '{}%'.format(round(100*scores[i]))
