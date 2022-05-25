@@ -1,0 +1,100 @@
+item { 
+	name:'Candi_Borobudur'
+	id:1
+}
+item { 
+	name:'Candi_Prambanan'
+	id:2
+}
+item { 
+	name:'Garuda_Wisnu_Kencana'
+	id:3
+}
+item { 
+	name:'Gereja_Blenduk'
+	id:4
+}
+item { 
+	name:'Jam_Gadang'
+	id:5
+}
+item { 
+	name:'Klenteng_Sam_Poo_Kong'
+	id:6
+}
+item { 
+	name:'Menara_Kudus'
+	id:7
+}
+item { 
+	name:'Monumen_Bandung_Lautan_Api'
+	id:8
+}
+item { 
+	name:'Monumen_Kilometer_Nol_Indonesia'
+	id:9
+}
+item { 
+	name:'Monumen_Nasional'
+	id:10
+}
+item { 
+	name:'Monumen_Pembebasan_Irian_Barat'
+	id:11
+}
+item { 
+	name:'Monumen_Selamat_Datang'
+	id:12
+}
+item { 
+	name:'Monumen_Yogya_Kembali'
+	id:13
+}
+item { 
+	name:'Museum_Sejarah_Jakarta'
+	id:14
+}
+item { 
+	name:'Pagoda_Watu_Gong'
+	id:15
+}
+item { 
+	name:'Patung_Gandrung'
+	id:16
+}
+item { 
+	name:'Patung_Pancoran'
+	id:17
+}
+item { 
+	name:'Patung_Suro_dan_Boyo'
+	id:18
+}
+item { 
+	name:'Patung_Yesus_Memberkati'
+	id:19
+}
+item { 
+	name:'Pura_Ulun_Danu_Bedugul'
+	id:20
+}
+item { 
+	name:'Tugu_Khatulistiwa'
+	id:21
+}
+item { 
+	name:'Tugu_Merpati_Perdamaian'
+	id:22
+}
+item { 
+	name:'Tugu_Pahlawan'
+	id:23
+}
+item { 
+	name:'Tugu_Tani'
+	id:24
+}
+item { 
+	name:'Tugu_Yogyakarta'
+	id:25
+}
