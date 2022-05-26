@@ -18,3 +18,12 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Type `pip install -r requirements.txt`
 - Serve the Flask app by typing `flask run`
 - It will run on `http://127.0.0.1:5000`
+
+# How to predict image with Postman
+- Open Postman
+- Enter URL request bar with `http://127.0.0.1:5000/predict`
+- Select method POST
+- Go to Body tab and select form-data
+- Change key from form-data with file (you can also named the key)
+- Input the image that you want predict as a value of the key
+- Send the request
