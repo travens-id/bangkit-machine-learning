@@ -27,3 +27,10 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Change key from form-data with file (it must be named 'file')
 - Input the image that you want predict as a value of the key
 - Send the request
+
+
+![Museum Sejarah Jakarta](https://user-images.githubusercontent.com/89571899/170517926-08c64baa-6dff-4e24-8e68-bdda09dfa997.jpeg)
+![Garuda Wisnu Kencana](https://user-images.githubusercontent.com/89571899/170517941-8e95a071-8849-4eb9-8707-47f5cdf9bde3.jpeg)
+![Pagoda Watu Gong](https://user-images.githubusercontent.com/89571899/170517932-d9ee25eb-2b27-4c8a-9af9-d5c7346a5078.jpeg)
+![Tugu Yogyakarta](https://user-images.githubusercontent.com/89571899/170517937-9578268c-96bf-443c-a6ad-54d0ddb6585d.jpeg)
+
