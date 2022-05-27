@@ -76,8 +76,7 @@ def predict():
             use_normalized_coordinates=True,
             max_boxes_to_draw=200,
             min_score_thresh=.30,
-            agnostic_mode=False
-        )
+            agnostic_mode=False)
         try:
             label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
             print(label)
@@ -87,12 +86,13 @@ def predict():
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(error)
             csvfile.close()
+            label = 'Tidak Terdeteksi'
         finally:
             predicted_image = Image.fromarray(image_np_with_detections.squeeze())
-            predicted_image.save('downloads/'+filename)
+            predicted_image.save('downloads/' + filename)
             json = {
                 "label": label,
-                "image_url": 'http://127.0.0.1:5000/downloads/'+filename
+                "image_url": 'http://127.0.0.1:5000/downloads/' + filename
             }
             return jsonify(json)
 
