@@ -74,8 +74,9 @@ def predict():
             result['detection_scores'][0],
             category_index,
             use_normalized_coordinates=True,
-            max_boxes_to_draw=200,
-            min_score_thresh=.30,
+            max_boxes_to_draw=1,
+            line_thickness=5,
+            min_score_thresh=.3,
             agnostic_mode=False)
         try:
             label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
