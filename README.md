@@ -28,4 +28,4 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Input the image that you want predict as a value of the key
 - Send the request
 
-![Landmark_Detection](https://user-images.githubusercontent.com/86970816/170767018-6ae2517d-9f95-49e4-aa33-fb474738c246.png)
+![Landmark_Detection (1)](https://user-images.githubusercontent.com/86970816/170767622-24a48a85-b69c-40a3-93d4-510929cf357b.png)
