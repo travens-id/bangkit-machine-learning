@@ -7,6 +7,8 @@ import sys
 import tensorflow_hub as hub
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as viz_utils
+from datetime import datetime
+import csv
 sys.path.append("..")
 
 app = Flask(__name__)
@@ -76,14 +78,23 @@ def predict():
             min_score_thresh=.30,
             agnostic_mode=False
         )
-        predicted_image = Image.fromarray(image_np_with_detections.squeeze())
-        predicted_image.save('downloads/'+filename)
-        label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
-        json = {
-            "label": label,
-            "image_url": 'http://127.0.0.1:5000/downloads/'+filename
-        }
-        return jsonify(json)
+        try:
+            label = viz_utils.visualize_boxes_and_labels_on_image_array.class_name
+            print(label)
+        except:
+            error = [datetime.now(), filename]
+            with open('error_log.csv', 'a+') as csvfile:
+                csvwriter = csv.writer(csvfile)
+                csvwriter.writerow(error)
+            csvfile.close()
+        finally:
+            predicted_image = Image.fromarray(image_np_with_detections.squeeze())
+            predicted_image.save('downloads/'+filename)
+            json = {
+                "label": label,
+                "image_url": 'http://127.0.0.1:5000/downloads/'+filename
+            }
+            return jsonify(json)
 
 @app.route('/downloads/<name>')
 def download_file(name):
