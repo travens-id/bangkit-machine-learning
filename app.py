@@ -99,7 +99,7 @@ def predict():
                 image_np_with_detections.squeeze())
             predicted_image.save('downloads/' + filename)
             json = {
-                "label": label,
+                "label": label.replace('_', ' '),
                 "image_url": 'http://127.0.0.1:5000/downloads/' + filename
             }
             return jsonify(json)
