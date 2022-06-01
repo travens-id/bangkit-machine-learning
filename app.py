@@ -100,7 +100,7 @@ def predict():
             predicted_image.save('downloads/' + filename)
             json = {
                 "label": label.replace('_', ' '),
-                "image_url": 'http://travens-api.my.id/downloads/' + filename
+                "image_url": 'https://travens-api.my.id/downloads/' + filename
             }
             return jsonify(json)
 
@@ -118,6 +118,3 @@ def not_found(error):
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=443, ssl_context=('/etc/letsencrypt/live/travens-api.my.id/cert.pem',
                                                                 '/etc/letsencrypt/live/travens-api.my.id/privkey.pem'))
-    # app.run(debug=False, host='0.0.0.0', port=443, ssl_context=('/etc/letsencrypt/live/travens-api.my.id/cert.pem',
-    #                                                             '/etc/letsencrypt/live/travens-api.my.id/privkey.pem'))
-    # app.run(debug=False, host='0.0.0.0')
