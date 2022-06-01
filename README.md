@@ -29,3 +29,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Send the request
 
 ![Landmark_Detection (1)](https://user-images.githubusercontent.com/86970816/170767622-24a48a85-b69c-40a3-93d4-510929cf357b.png)
+
+# Architecture of SSD MobileNet V2 for Landmark Detection
+![SSD_MobileNetV2](https://user-images.githubusercontent.com/86970816/171426257-99783098-4b49-48fe-b45c-99c8949738e9.png)
+
