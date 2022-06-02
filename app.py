@@ -21,10 +21,23 @@ LABEL_FILENAME = 'labels/label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(
     LABEL_FILENAME, use_display_name=True)
 
-print('------ Loading model ------')
+print('''
+ _                    _ _               __  __           _      _             
+| |    ___   __ _  __| (_)_ __   __ _  |  \/  | ___   __| | ___| |            
+| |   / _ \ / _` |/ _` | | '_ \ / _` | | |\/| |/ _ \ / _` |/ _ \ |            
+| |__| (_) | (_| | (_| | | | | | (_| | | |  | | (_) | (_| |  __/ |  _   _   _ 
+|_____\___/ \__,_|\__,_|_|_| |_|\__, | |_|  |_|\___/ \__,_|\___|_| (_) (_) (_)
+                                |___/                                         
+''')
 model = 'model/'
 hub_model = hub.load(model)
-print('------ Model Loaded ------')
+print('''
+ __  __           _      _   _                    _          _   _ 
+|  \/  | ___   __| | ___| | | |    ___   __ _  __| | ___  __| | | |
+| |\/| |/ _ \ / _` |/ _ \ | | |   / _ \ / _` |/ _` |/ _ \/ _` | | |
+| |  | | (_) | (_| |  __/ | | |__| (_) | (_| | (_| |  __/ (_| | |_|
+|_|  |_|\___/ \__,_|\___|_| |_____\___/ \__,_|\__,_|\___|\__,_| (_)
+''')
 
 
 def allowed_file(filename):
@@ -99,15 +112,22 @@ def predict():
                 image_np_with_detections.squeeze())
             predicted_image.save('downloads/' + filename)
             json = {
-                "label": label.replace('_', ' '),
-                "image_url": 'https://travens-api.my.id/downloads/' + filename
+                'label': label.replace('_', ' '),
+                'image_url': 'https://travens-api.my.id/downloads/' + filename
             }
             return jsonify(json)
+    else:
+        json = {
+            'data': [],
+            'message': 'Please upload JPG, JPEG, or PNG!',
+            'error': "The selected file isn't supported!"
+        }
+        return jsonify(json)
 
 
 @app.route('/downloads/<name>')
 def download_file(name):
-    return send_from_directory(app.config["DOWNLOAD_FOLDER"], name)
+    return send_from_directory(app.config['DOWNLOAD_FOLDER'], name)
 
 
 @app.errorhandler(404)
