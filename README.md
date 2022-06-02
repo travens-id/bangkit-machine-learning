@@ -33,7 +33,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Enter URL request bar with `http://127.0.0.1:5000/predict`
 - Select method POST
 - Go to Body tab and select form-data
-- Change key from form-data with file (it must be named 'file')
+- Change key from form-data with file (it must be named `file`)
 - Input the image that you want predict as a value of the key
 - Send the request
 
