@@ -99,15 +99,22 @@ def predict():
                 image_np_with_detections.squeeze())
             predicted_image.save('downloads/' + filename)
             json = {
-                "label": label.replace('_', ' '),
-                "image_url": 'https://travens-api.my.id/downloads/' + filename
+                'label': label.replace('_', ' '),
+                'image_url': 'https://travens-api.my.id/downloads/' + filename
             }
             return jsonify(json)
+    else:
+        json = {
+            'data': [],
+            'message': 'Please upload JPG, JPEG, or PNG!',
+            'error': "The selected file isn't supported!"
+        }
+        return jsonify(json)
 
 
 @app.route('/downloads/<name>')
 def download_file(name):
-    return send_from_directory(app.config["DOWNLOAD_FOLDER"], name)
+    return send_from_directory(app.config['DOWNLOAD_FOLDER'], name)
 
 
 @app.errorhandler(404)
