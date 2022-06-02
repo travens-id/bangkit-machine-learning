@@ -4,6 +4,12 @@ The source code of machine learning model's API of Travens smart guide in order 
 
 ![Landmark_Detection (1)](https://user-images.githubusercontent.com/86970816/170767622-24a48a85-b69c-40a3-93d4-510929cf357b.png)
 
+# Model Building's Notebook
+[Landmark Detection Notebook](https://colab.research.google.com/drive/1OEpz5uGPAbT-JtkYdCEv4If7UHgA_sF6?usp=sharing)
+
+# API URL
+[Flask API](https://travens-api.my.id/)
+
 # API Endpoint
 | Endpoint |   Method   | Body Sent (JSON) |              Description              |
 | :------: | :--------: | :--------------: | :-----------------------------------: |
