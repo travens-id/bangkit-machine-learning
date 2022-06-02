@@ -4,6 +4,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 
 ![Landmark_Detection (1)](https://user-images.githubusercontent.com/86970816/170767622-24a48a85-b69c-40a3-93d4-510929cf357b.png)
 
+# API Endpoint
 | Endpoint |   Method   | Body Sent (JSON) |              Description              |
 | :------: | :--------: | :--------------: | :-----------------------------------: |
 |     /    |     GET    |       None       |   HTTP GET REQUEST Testing Endpoint   |
