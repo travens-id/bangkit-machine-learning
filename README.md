@@ -46,3 +46,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 ## Architecture of SSD MobileNet V2 for Landmark Detection
 ![SSD_MobileNetV2](https://user-images.githubusercontent.com/86970816/171426257-99783098-4b49-48fe-b45c-99c8949738e9.png)
 
+# References
+- Cao B, Araujo A, Sim J. Unifying Deep Local and Global Features for Image Search. 2020. [Arxiv](https://arxiv.org/abs/2001.05027)
+- Weyand T, Araujo A, Cao B, Sim J. Google Landmarks Dataset v2-A Large-Scale Benchmark for Instance-Level Recognition and Retrieval. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020. [Arxiv](https://arxiv.org/abs/2004.01804)
+- Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen. MobileNetV2: Inverted Residuals and Linear Bottlenecks. The IEEE Conference on Computer Vision and Pattern Recognition. 2018. [Arxiv](https://arxiv.org/abs/1801.04381)
