@@ -27,6 +27,9 @@ The source code of machine learning model's API of Travens smart guide in order 
 |   /404   | GET & POST |     Anything     |         404 NOT FOUND Endpoint        |
 | /predict |    POST    | file: Image file | HTTP POST REQUEST Prediction Endpoint |
 
+# Algorithm of Machine Learning Service
+![Travens Machine Learning-Page-1 drawio](https://user-images.githubusercontent.com/89571899/172442140-295be373-0687-4a76-90ec-59073aee4a66.png)
+
 # How to run this Flask app
 - Clone this repo
 - Open terminal and go to this project's root directory
