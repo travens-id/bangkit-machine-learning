@@ -10,8 +10,9 @@ The source code of machine learning model's API of Travens smart guide in order 
 # API URL
 [Flask API](https://travens-api.my.id/)
 
-# Image Dataset Resource
-[Google Images](https://images.google.com/)
+# Dataset Resources
+- [Google Images](https://images.google.com/)
+- [Wikipedia](https://id.wikipedia.org/wiki/Halaman_Utama)
 
 # API Endpoint
 | Endpoint |   Method   | Body Sent (JSON) |              Description              |
