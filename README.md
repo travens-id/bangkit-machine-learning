@@ -50,3 +50,4 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Cao B, Araujo A, Sim J. Unifying Deep Local and Global Features for Image Search. 2020. [Arxiv](https://arxiv.org/abs/2001.05027)
 - Weyand T, Araujo A, Cao B, Sim J. Google Landmarks Dataset v2-A Large-Scale Benchmark for Instance-Level Recognition and Retrieval. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020. [Arxiv](https://arxiv.org/abs/2004.01804)
 - Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen. MobileNetV2: Inverted Residuals and Linear Bottlenecks. The IEEE Conference on Computer Vision and Pattern Recognition. 2018. [Arxiv](https://arxiv.org/abs/1801.04381)
+- Collection of models for landmark recognition [TensorFlow Hub](https://tfhub.dev/google/collections/landmarks)
