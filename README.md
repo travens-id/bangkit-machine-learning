@@ -13,6 +13,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 # Dataset Resources
 - [Google Images](https://images.google.com/)
 - [Wikipedia](https://id.wikipedia.org/wiki/Halaman_Utama)
+- [Traveloka](https://www.traveloka.com/id-id/explore/destination/famous-landmarks-in-indonesia-acc/28709)
 
 # API Endpoint
 | Endpoint |   Method   | Body Sent (JSON) |              Description              |
