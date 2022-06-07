@@ -11,6 +11,7 @@ The source code of machine learning model's API of Travens smart guide in order 
 [Flask API](https://travens-api.my.id/)
 
 # Dataset Resources
+- [Google Landmarks Dataset V2](https://storage.googleapis.com/gld-v2/web/index.html){:target="_blank"}
 - [Traveloka](https://www.traveloka.com/id-id/explore/destination/famous-landmarks-in-indonesia-acc/28709)
 - [Google Images](https://images.google.com/)
 - [Wikipedia](https://id.wikipedia.org/wiki/Halaman_Utama)
