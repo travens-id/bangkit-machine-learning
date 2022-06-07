@@ -16,6 +16,9 @@ The source code of machine learning model's API of Travens smart guide in order 
 - [Google Images](https://images.google.com/)
 - [Wikipedia](https://id.wikipedia.org/wiki/Halaman_Utama)
 
+# Detection Labels
+[Label Map](https://github.com/travens-id/bangkit-machine-learning/blob/main/labels/label_map.pbtxt)
+
 # API Endpoint
 | Endpoint |   Method   | Body Sent (JSON) |              Description              |
 | :------: | :--------: | :--------------: | :-----------------------------------: |
