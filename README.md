@@ -40,6 +40,11 @@ The source code of machine learning model's API of Travens smart guide in order 
 - Serve the Flask app by typing `flask run`
 - It will run on `http://127.0.0.1:5000`
 
+![image](https://user-images.githubusercontent.com/86970816/172518581-b15b0561-e049-4b8e-bc74-6c047d0cb49d.png)
+
+![image](https://user-images.githubusercontent.com/86970816/172518979-87054624-b3af-4554-b777-b3da5ac80e46.png)
+
+
 # How to predict image with Postman
 - Open Postman
 - Enter URL request bar with `http://127.0.0.1:5000/predict`
